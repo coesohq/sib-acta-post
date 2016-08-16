@@ -1,0 +1,20 @@
+---
+- name: copy installed_packages
+  template: src=installed_packages.j2
+            dest={{ manifests_dir }}/installed_packages
+            backup=no
+
+- name: copy build_dependencies
+  template: src=build_dependencies.j2
+            dest={{ manifests_dir }}/build_dependencies
+            backup=no
+
+- name: copy binary_artifacts
+  template: src=binary_artifacts.j2
+            dest={{ manifests_dir }}/binary_artifacts
+            backup=no
+
+- name: copy source_artifacts
+  template: src=source_artifacts.j2
+            dest={{ manifests_dir }}/source_artifacts
+            backup=no

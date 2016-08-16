@@ -1,5 +1,5 @@
-acta-post
-=========
+records-post
+============
 
 This role records information in files about the packages used to build
 artifacts, and the binary and source artifacts built.
@@ -22,7 +22,7 @@ N/A
 Dependencies
 ------------
 
-* Role aikchar.sib-acta-pre
+* Role aikchar.sib-records-pre
 * build_dependencies - from role aikchar.sib-build-pre
 * installed_packages - from role aikchar.sib-build-pre
 * binary_artifacts - from role aikchar.sib-build-post
@@ -36,7 +36,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - role: aikchar.sib-acta-post
+         - role: aikchar.sib-records-post
 
 License
 -------
